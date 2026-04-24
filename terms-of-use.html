@@ -5,7 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ClipStack — Terms of Use</title>
 <style>
-  :root { color-scheme: light dark; }
+  :root {
+    --accent:       #2563eb;
+    --accent-light: #dbeafe;
+    --accent-text:  #1d4ed8;
+    --bg:           #ffffff;
+    --surface:      #f8faff;
+    --border:       #dbeafe;
+    --text:         #1a1a1e;
+    --muted:        #6b7280;
+    --rule:         #e5e7eb;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent:       #60a5fa;
+      --accent-light: #1e2d4a;
+      --accent-text:  #93c5fd;
+      --bg:           #0c0c10;
+      --surface:      #17171b;
+      --border:       #1e2d4a;
+      --text:         #e5e5e7;
+      --muted:        #9ca3af;
+      --rule:         #222228;
+    }
+  }
   *, *::before, *::after { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -13,35 +37,48 @@
     margin: 0 auto;
     padding: 40px 24px 60px;
     line-height: 1.65;
-    color: #1a1a1e;
-    background: #ffffff;
+    color: var(--text);
+    background: var(--bg);
   }
-  @media (prefers-color-scheme: dark) {
-    body { background: #0c0c10; color: #e5e5e7; }
-    a { color: #60a5fa; }
-    hr { border-color: #222; }
-    .card { background: #17171b; border-color: #2a2a2e; }
-  }
-  a { color: #2563eb; text-decoration: none; }
+  a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h1 { font-size: 2rem; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.02em; }
-  h2 { font-size: 1.1rem; font-weight: 600; margin: 2.25rem 0 0.5rem; color: #2563eb; }
-  @media (prefers-color-scheme: dark) { h2 { color: #60a5fa; } }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2.25rem 0 0.5rem;
+    color: var(--accent);
+  }
   p { margin: 0.55rem 0; }
   ul { padding-left: 1.4em; margin: 0.4rem 0; }
   li { margin-bottom: 0.35rem; }
-  hr { border: none; border-top: 1px solid #e5e7eb; margin: 2.5rem 0; }
-  .meta { font-size: 0.88rem; color: #6b7280; margin-top: 4px; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  .meta { font-size: 0.88rem; color: var(--muted); margin-top: 4px; }
   .card {
-    background: #f8faff;
-    border: 1px solid #dbeafe;
-    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
     padding: 16px 20px;
     margin: 1.5rem 0;
   }
   .card p { margin: 0; font-size: 0.97rem; }
-  footer { margin-top: 3.5rem; font-size: 0.85rem; color: #9ca3af; border-top: 1px solid #e5e7eb; padding-top: 1.25rem; }
-  @media (prefers-color-scheme: dark) { footer { border-top-color: #222; } }
+  footer {
+    margin-top: 3.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 1.25rem;
+  }
 </style>
 </head>
 <body>
@@ -130,10 +167,10 @@
 <p>We may update these Terms from time to time. When we do, we will update the "Last updated" date above. Material changes will be communicated via an in-app notice or App Store release notes where practicable. Continued use of the App after changes take effect constitutes your acceptance of the updated Terms.</p>
 
 <h2>17. Contact</h2>
-<p>Questions about these Terms? Reach us at <a href="mailto:taufiq.dev9@gmail.com">taufiq.dev9@gmail.com</a>. We aim to respond within 5 business days.</p>
+<p>Questions about these Terms? Reach us at <a href="mailto:taufiqur.developer@gmail.com">taufiqur.developer@gmail.com</a>. We aim to respond within 5 business days.</p>
 
 <hr>
-<p style="font-size:0.9rem; color:#6b7280;">
+<p style="font-size:0.9rem; color:var(--muted);">
   Also see our <a href="./privacy-policy.html">Privacy Policy</a>.
 </p>
 
