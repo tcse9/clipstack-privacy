@@ -24,7 +24,203 @@
     .tag { background: #1e2d4a; color: #93c5fd; }
   }
   a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipStack — Privacy Policy</title>
+<style>
+  :root {
+    --accent:       #2563eb;
+    --accent-light: #dbeafe;
+    --accent-text:  #1d4ed8;
+    --bg:           #ffffff;
+    --surface:      #f8faff;
+    --border:       #dbeafe;
+    --text:         #1a1a1e;
+    --muted:        #6b7280;
+    --rule:         #e5e7eb;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent:       #60a5fa;
+      --accent-light: #1e2d4a;
+      --accent-text:  #93c5fd;
+      --bg:           #0c0c10;
+      --surface:      #17171b;
+      --border:       #1e2d4a;
+      --text:         #e5e5e7;
+      --muted:        #9ca3af;
+      --rule:         #222228;
+    }
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 24px 60px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+  }
+  a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2.25rem 0 0.5rem;
+    color: var(--accent);
+  }
+  p { margin: 0.55rem 0; }
+  ul { padding-left: 1.4em; margin: 0.4rem 0; }
+  li { margin-bottom: 0.35rem; }
+  hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  .meta { font-size: 0.88rem; color: var(--muted); margin-top: 4px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 1.5rem 0;
+  }
+  .card p { margin: 0; font-size: 0.97rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; margin: 0.75rem 0; }
+  th {
+    text-align: left;
+    padding: 10px 12px;
+    background: var(--surface);
+    font-weight: 600;
+    color: var(--accent-text);
+    border-bottom: 2px solid var(--border);
+  }
+  td { padding: 10px 12px; border-top: 1px solid var(--rule); vertical-align: top; }
+  footer {
+    margin-top: 3.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 1.25rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>App:</strong> ClipStack &nbsp;·&nbsp; <strong>Effective:</strong> April 24, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> April 24, 2026</p>
+
+<div class="card">
+  <p><strong>Short version:</strong> ClipStack does not collect, read, or transmit your clipboard content. Everything you copy stays on your device (and optionally in your private iCloud). We use RevenueCat solely to manage your subscription — it never sees your clips.</p>
+</div>
+
+<h2>1. Who We Are</h2>
+<p>ClipStack is an independently developed iOS app. References to "we", "us", or "our" in this policy mean the individual developer reachable at <a href="mailto:taufiqur.developer@gmail.com">taufiqur.developer@gmail.com</a>.</p>
+
+<h2>2. What Data We Collect</h2>
+<p>We collect as little as possible. Here is the full picture:</p>
+
+<table>
+  <tr>
+    <th>Data</th>
+    <th>Where it goes</th>
+    <th>Who can see it</th>
+  </tr>
+  <tr>
+    <td><strong>Clipboard content</strong> (your clips)</td>
+    <td>Stored locally on your device via SwiftData. Optionally synced to your private iCloud (CloudKit) if you enable iCloud on your Apple ID.</td>
+    <td>Only you. We have no access.</td>
+  </tr>
+  <tr>
+    <td><strong>Tags, expiry dates, pin status</strong></td>
+    <td>Same as above — local device / your private iCloud.</td>
+    <td>Only you.</td>
+  </tr>
+  <tr>
+    <td><strong>Subscription status</strong></td>
+    <td>Managed by RevenueCat. An anonymous identifier (not linked to your name or email) is used to track whether you have an active Pro subscription.</td>
+    <td>Us and RevenueCat (see Section 4).</td>
+  </tr>
+  <tr>
+    <td><strong>Crash and diagnostic logs</strong></td>
+    <td>If you opt in to sharing diagnostics with developers in iOS Settings, Apple may share anonymised crash reports with us. This data contains no clipboard content.</td>
+    <td>Us, via Apple's developer tools. Never your clips.</td>
+  </tr>
+</table>
+
+<p>We do <strong>not</strong> collect: your name, email address, location, contacts, photos, browsing history, or any other data beyond what is listed above.</p>
+
+<h2>3. iCloud Sync</h2>
+<p>If you have iCloud enabled, ClipStack uses Apple's CloudKit private database to sync your clips across your own devices. This data is stored in <strong>your personal iCloud account</strong> under your Apple ID — we have no technical ability to read it. Apple's iCloud security and encryption policies apply. You can disable iCloud sync at any time in iOS Settings → your Apple ID → iCloud → ClipStack.</p>
+
+<h2>4. RevenueCat (Subscription Management)</h2>
+<p>ClipStack uses <a href="https://www.revenuecat.com" target="_blank" rel="noopener">RevenueCat</a> to manage in-app subscriptions. When you purchase or restore a Pro subscription, RevenueCat receives:</p>
+<ul>
+  <li>An anonymous app user ID generated by RevenueCat (not your Apple ID or email).</li>
+  <li>Purchase receipt information from Apple to verify your subscription status.</li>
+  <li>Anonymised usage events (e.g., subscription started, renewed, cancelled).</li>
+</ul>
+<p>RevenueCat does <strong>not</strong> receive any of your clipboard content, tags, or personal data beyond the above. All payment processing is handled by Apple — RevenueCat only receives receipt data that Apple provides. For more information, see <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat's Privacy Policy</a>.</p>
+
+<h2>5. Apple Intelligence &amp; On-Device AI</h2>
+<p>ClipStack's Smart Clip features (auto-categorisation, summaries, "Ask Your Clips" search, and translation) use the <strong>FoundationModels</strong> framework on iOS 26+. All AI processing runs entirely on your device — your clipboard content is <strong>never sent to any server</strong> for these features. These features require a device that supports Apple Intelligence and will not activate on unsupported devices.</p>
+
+<h2>6. Clipboard Access</h2>
+<p>ClipStack reads your device clipboard only when:</p>
+<ul>
+  <li>You are actively using the app and iOS detects new content on the clipboard, prompting you to save it.</li>
+  <li>You explicitly tap to save a clip from the Share Sheet extension.</li>
+  <li>You use the custom keyboard extension to paste a saved clip.</li>
+</ul>
+<p>On iOS 16+, the system shows a banner notification whenever an app reads the clipboard. ClipStack never reads the clipboard silently in the background.</p>
+
+<h2>7. App Extensions</h2>
+<p>ClipStack includes a <strong>Share Sheet extension</strong>, a <strong>custom keyboard extension</strong>, and a <strong>Home Screen widget</strong>. These extensions share access to your locally stored clips via a private iOS App Group container — the data does not leave your device through this mechanism. The same privacy guarantees apply to the extensions as to the main app.</p>
+
+<h2>8. Children's Privacy</h2>
+<p>ClipStack is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
+
+<h2>9. Data Retention and Deletion</h2>
+<p>Your clips are stored until you delete them within the app, or until you delete the app from your device. Deleting the app removes all locally stored data. If iCloud sync is enabled, you can delete iCloud data from iOS Settings → your Apple ID → iCloud → Manage Storage → ClipStack. RevenueCat anonymised purchase data is retained per their own data retention policy.</p>
+
+<h2>10. Your Rights</h2>
+<p>Because we do not collect personal data beyond an anonymous subscription identifier, there is typically nothing for us to provide, correct, or delete on our end. If you have questions about your RevenueCat data, contact RevenueCat directly. If you have any other privacy questions or requests, email us at <a href="mailto:taufiqur.developer@gmail.com">taufiqur.developer@gmail.com</a>.</p>
+
+<h2>11. Third-Party Services</h2>
+<p>The only third-party service ClipStack integrates with is RevenueCat (see Section 4). We do not integrate advertising networks, analytics SDKs, social SDKs, or tracking frameworks of any kind.</p>
+
+<h2>12. Changes to This Policy</h2>
+<p>We may update this Privacy Policy occasionally. If the changes are material, we will update the "Last updated" date above. Continued use of the app after changes are posted constitutes your acceptance.</p>
+
+<h2>13. Contact</h2>
+<p>Privacy questions or concerns? Email <a href="mailto:taufiqur.developer@gmail.com">taufiqur.developer@gmail.com</a>. We aim to respond within 5 business days.</p>
+
+<hr>
+<p style="font-size:0.9rem; color:var(--muted);">
+  Also see our <a href="./terms-of-use.html">Terms of Use</a>.
+</p>
+
+<footer>
+  ClipStack is developed independently and is not affiliated with Apple Inc.<br>
+  iOS, iCloud, Apple Intelligence, CloudKit, and the Apple logo are trademarks of Apple Inc.<br>
+  RevenueCat is a trademark of RevenueCat, Inc.
+</footer>
+
+</body>
+</html>
+
   h1 { font-size: 2rem; font-weight: 700; margin: 0 0 6px; letter-spacing: -0.02em; }
   h2 { font-size: 1.1rem; font-weight: 600; margin: 2.25rem 0 0.5rem; color: #2563eb; }
   @media (prefers-color-scheme: dark) { h2 { color: #60a5fa; } }
